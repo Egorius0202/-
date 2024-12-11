@@ -29,3 +29,11 @@ k=int(input("введите k"))
 n=int(input("введите n"))
 print(math.factorial(n)//(math.factorial(k)*math.factorial(n-k)))
 print("calkulate")
+
+import pandas as pd
+
+df_excel = pd.read_excel('Оценки.xlsx')
+
+print(df_excel.head())
+
+print(df_excel.info())
