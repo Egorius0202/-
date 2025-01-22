@@ -7,3 +7,10 @@ print(df_excel.tail(5))
 num_1=int(input("напиши номер строки"))
 df_excel = pd.read_excel('data.xlsx',index_col=num_1)
 print(df_excel)
+22.01.2025
+import pandas as pd
+num_1=int(input("напиши номер строки"))
+num_2=int(input("напиши номер столбца"))
+df= pd.read_excel('оценка1.xlsx')
+print(df)
+print(df.iloc[num_1, num_2])
